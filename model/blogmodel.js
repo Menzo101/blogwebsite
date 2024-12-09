@@ -6,16 +6,18 @@ const blogschema = new mongoose.Schema({
         required: true,
 
     },
-    author: {
-        type: String,
-        required: true
-    },
     snippet: {
         type: String,
         required: true,
 
     },
-
+    images: [{
+        type: String,
+        required: true
+    }],
+    displayimage: {
+        type: String
+    },
     completed: {
         type: Boolean,
         default: false
@@ -25,8 +27,10 @@ const blogschema = new mongoose.Schema({
         required: true,
 
     },
-  
-    
+    postedBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Macs"
+    },
     createdAt: {
         type: Date,
         default: Date.now()

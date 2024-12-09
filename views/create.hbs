@@ -7,18 +7,16 @@
 {{>nav}}
 
             <div class="contact-form"style="margin-top: 5rem;" >
-                <form action="/blogs" method="post" >
+                <form action="/blogs" method="post" enctype="multipart/form-data" >
                     <label for="title"> Title:</label><br>
                     <input type="text" id="title" name="title"><br><br>
-
-                    <label for="author">Author:</label><br>
-                    <input type="text" id="author" name="author"><br><br>
-
                     <label for="snippet">Snippet:</label><br>
-                    <input type="text" id="snippet" name="snippet"><br><br>
+                    <input type="text" id="snippet"  name="snippet"><br><br>
 
                       <label for="body">Body:</label><br>
                     <input type="text" id="body" name="body" ><br><br>
+                       <label for="images">Images:</label><br>
+                    <input type="file" id="body" name="images" accept=".png,.jpegs,.jpg" ><br><br>
 
                     <button type="submit">Submit</button>
                 </form>

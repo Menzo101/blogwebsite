@@ -19,7 +19,7 @@ const loginvalidate = (data) => {
     })
     return loginschema.validate(data)
 }
-const fgtpassword = (data) => { 
+const fgtpassword = (data) => {
     const forgetpasswordschema = Joi.object({
         email: Joi.string().email().required()
     })
@@ -41,7 +41,6 @@ const rstpassword = (data) => {
 const productvalidate = (data) => {
     const productschema = Joi.object({
         title: Joi.string().required(),
-        author: Joi.string().required(),
         snippet: Joi.string().required(),
         body: Joi.string().required(),
     })

@@ -15,12 +15,12 @@
                 <div class="cap">
                 <div class="content1">
                     <a href="/blogsdetails/{{_id}}">
-                  <main class="container">  
-            {{!-- <img src="post-image.jpg" alt="Blog Post Image"> --}}
+                  <main class="container"> 
+                     {{displayimage}}
             <h2 style="color: black; ">{{title}}</h2>
             <div class="post-meta">
                 {{!-- <span>Posted on: January 1, 2024</span> --}}
-                <span style="color: black;">By:{{author}}</span>
+                <span style="color: black;">By:{{postedBy.firstname}}</span>
                
             </div>
 {{!--             
