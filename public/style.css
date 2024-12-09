@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
 
 header {
     background-color: #78B3CE;
@@ -20,12 +23,12 @@ header {
     left: 0;
     right: 0;
     top: 0;
-     height: 70px; 
+    height: 70px;
 }
 
 header div {
     color: white;
- 
+
 
 }
 
@@ -88,29 +91,14 @@ border-radius: 40px;
 
 .odd1 {
     color: black;
-    
-}
-
-.design1 {
-    color: black;
-    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .content1 a {
     text-decoration: none;
 }
 
-/* .content {
-    margin-top: 5px;
-    
-  
-} */
-.cap{
-    background-color: black;
-    width: 100%;
-    background-color: #f4f4f4;
 
-}
 
 /* .content1 h2 {
     margin-top: 1rem;
@@ -122,19 +110,19 @@ border-radius: 40px;
     margin-top: 1.5rem;
 }
 
-hr {
+/* hr {
     color: white;
     margin: 10px 0;
-}
+} */
 
 /* details styles */
 .detail-content {
     margin: 2rem 2rem;
 }
 
-.design12 {
+/* .design12 {
     margin-top: 10px;
-}
+} */
 
 /* delete styles */
 .delete {
@@ -182,25 +170,30 @@ ul a {
 
 /* home page styles */
 .content {
-    padding: 2rem 3rem;
-
+    padding: 3rem;
 
 }
 
-.cap {
+/* .content1 {
+    background-color: red;
+     padding: 20px; 
+} */
+
+
+/* .cap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 /* about-page styles */
 .about {
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
 }
 
 .about p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.2;
     font-family: sans-serif;
 }
 
@@ -277,13 +270,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .container {
-    width: 380px;
-    margin: 50px auto;
-    padding: 25px;
+    max-width: 400px;
+    margin-top: 2rem;
+    /* margin: 20px auto; */
+    /* padding: 50px; */
     background: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -344,7 +338,7 @@ button:hover {
         bottom: 0;
         width: 50%;
         height: 0%;
-        padding: 2em 0 0 2em;
+        padding: 1em 0 0 1em;
         transform: all 0.5s ease-in-out;
         overflow: hidden;
     }
@@ -368,8 +362,9 @@ button:hover {
         /* padding: 13px; */
         border-radius: 4px;
         position: relative;
-        right: 30px;
-        top: 7px;
+        right: 20px;
+        top: 1px;
+        font-size: 23px;
 
     }
 
@@ -383,5 +378,9 @@ button:hover {
     nav ul li a {
         text-decoration: underline;
         font-size: 1rem;
+    }
+
+    .ola h1 {
+        font-size: 1.5rem;
     }
 }
