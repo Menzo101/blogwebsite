@@ -17,8 +17,8 @@
 	"version": "1.0.0",
 	"main": "app.js",
 	"scripts": {
-		"build": "npm run build",
-		"start": "npm start",
+		"build": "npm build",
+		"start": "node app.js",
 		"dev": "nodemon app.js"
 	},
 	"author": "",
