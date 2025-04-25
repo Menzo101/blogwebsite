@@ -1,0 +1,44 @@
+<header>
+	<div class="ola">
+		<h1>MenzoBlog</h1>
+	</div>
+	<input type="checkbox" name="" id="show-bars" />
+
+	<nav>
+
+		<ul>
+			<li> <a href="/">Home</a></li>
+			<li> <a href="/about">About</a></li>
+			{{#if user}}
+		
+				<li> <a href="/create">Create Blog</a></li>
+				<p> welcome:{{name}}</p>
+				<a href="/logout">Logout</a>
+			{{else}}
+
+			<li> <a href="/registar">Registar</a></li>
+			<li> <a href="/login">Login</a></li>
+			{{/if}}
+		</ul>
+
+	</nav>
+
+	<label for="show-bars">
+		<div class="bars">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+	</label>
+</header>
+
+{{! <header class="head">
+    <div class="logo">
+        <h1>Menzo <span class="effect1">-Blog</span></h1>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/blogs">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/create">New blog</a></li>
+        </ul>
+    </nav>
+</header> }}

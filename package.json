@@ -1,0 +1,27 @@
+{
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cookie-parser": "^1.4.7",
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"express-fileupload": "^1.5.1",
+		"express-handlebars": "^8.0.1",
+		"joi": "^17.13.3",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.6.0",
+		"nodemailer": "^6.9.16",
+		"nodemon": "^3.1.4",
+		"uuid": "^11.0.3"
+	},
+	"name": "fullstack-blog-website",
+	"version": "1.0.0",
+	"main": "app.js",
+	"scripts": {
+		"build": "npm build",
+		"start": "node app.js",
+		"dev": "nodemon app.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}

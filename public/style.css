@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    background-color: #78B3CE;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    /* overflow: hidden; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 70px;
+}
+
+
+
+.bars {
+    display: none;
+}
+
+#show-bars {
+    display: none;
+}
+
+
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: color;
+}
+
+
+.content1 a {
+    text-decoration: none;
+}
+
+
+
+
+
+.content1 p {
+    margin-top: 1.5rem;
+}
+
+
+
+/* details styles */
+.detail-content {
+    margin: 2rem 2rem;
+}
+
+
+/* delete styles */
+.delete {
+    float: right;
+    background-color: red;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    transition: all 1s;
+}
+
+.delete:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links li a:hover {
+    color: red;
+    transition: all 1s;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: black;
+
+}
+
+/* home page styles */
+ .allcontent {
+margin: 5rem 1rem;
+position:relative;
+
+}  
+
+
+.odd1 {
+    color: black;
+    font-size: 1.5rem;
+}
+.bigger{
+    background-color: white;
+    margin-top: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+.content{
+display:flex;
+justify-content:space-between;
+text-decoration: none;
+
+}
+.content h2{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.delete-btn a{
+    text-decoration: none;
+
+}
+.cominghome{
+
+    color: black;
+  
+}
+    
+
+.delete-btn{
+    background-color: #78B3CE;
+    border-radius: 5px;
+    padding: 10px 
+}
+/* about-page styles */
+.about {
+    padding: 7rem 1rem;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #78B3CE;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    /* background: red; */
+
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: red;
+}
+
+textarea {
+    width: 500px;
+    /* height: 30px; */
+    outline: none;
+    border: none;
+}
+
+textarea:active {
+    border: 2px solid aqua;
+}
+
+input {
+    width: 500px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+input:active {
+    border: 2px solid aqua;
+}
+
+/* styling of registaer form */
+
+
+.container {
+    max-width: 500px;
+    margin:7rem auto;
+ 
+     padding: 15px;
+
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* responsiveness styling */
+@media all and (max-width:430px) {
+
+    /* .btn-1 {
+      position: relative;
+      right: 10px;
+    } */
+    .ola {
+        color: white;
+        font-size: 30px;
+    }
+
+
+
+    nav {
+        background-color: transparent;
+        position: fixed;
+        z-index: -1;
+        top: 4em;
+        right: 0;
+        left: 100;
+        bottom: 0;
+        width: 50%;
+        height: 0%;
+        padding: 1em 0 0 1em;
+        transform: all 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-1 {
+        padding: 7px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+
+    .bars {
+        display: block;
+        /* padding: 13px; */
+        border-radius: 4px;
+        position: relative;
+        right: 20px;
+        top: 1px;
+        font-size: 23px;
+
+    }
+
+    header #show-bars:checked~nav {
+        background-color: #78B3CE;
+        height: 50%;
+        cursor: pointer;
+        transition: all 2s;
+    }
+
+    nav ul li a {
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+
+    .ola h1 {
+        font-size: 1.5rem;
+    }
+}

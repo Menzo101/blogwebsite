@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+
+    <body>
+       {{>nav}}
+
+
+            <div class="detail-content">
+                <h1 style="margin-bottom: 1rem;"> <a href="/blogs">BLOGS</a></h1>
+                <h2 class="design1">
+                   
+                    {{blogs.title}}
+                </h2>
+                <div class="design12">
+                    <p>
+                      {{blogs.body}}
+                    </p>
+                </div>
+              
+            </div>
+            
+            <!-- <script>
+                const trashCan = document.querySelector('a.delete');
+
+                trashCan.addEventListener("click", (e) => {
+                    const endPoint = `/blogs/${trashCan.dataset.doc}`;
+
+                    fetch(endPoint, {
+                        method: "DELETE"
+                    })
+                        .then((response) => {
+                            return response.json()
+                        })
+                        .then((data) => {
+                            window.location.href = data.redirect
+                        })
+                        .catch(() => {
+                            console.log(err)
+                        })
+                })
+            </script> -->
+    </body>
+
+</html>

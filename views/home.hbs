@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+{{>head}}
+
+    <body>
+        {{>nav}}
+              
+             
+                 
+         
+            <div class="allcontent">
+                   <h1><a href="/" class="odd1">ALL-BLOGS</a></h1>
+                   <div class="bigger">
+                        {{#each allblog}}
+                
+                <div class= "content">
+                    <a href="/blogsdetails/{{_id}}">
+        
+                
+            <h2 >{{title}}</h2>
+            <div class="name">
+                {{!-- <span>Posted on: January 1, 2024</span> --}}
+                <span class="cominghome">By:{{postedBy.firstname}}</span>
+               
+            </div>
+            <a/>
+            <div class="delete-btn">
+    <a style="color:black;" href="/delete/{{_id}}">Delete</a> 
+            </div>
+              
+    
+             <a/>
+            
+                 </div>
+            
+                 
+           
+             {{/each}}
+
+                   </div>
+          
+            
+                 
+            </div>
+            
+             
+            
+              
+    </body>
+
+</html>
